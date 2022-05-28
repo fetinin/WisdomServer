@@ -1,0 +1,6 @@
+# All files excluded by default
+*
+!cmd
+!internal
+!go.mod
+!go.sum
