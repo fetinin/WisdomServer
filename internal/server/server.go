@@ -35,6 +35,7 @@ func Run(ctx context.Context, addr string) error {
 
 	handler := handler{quotes: quotes}
 	go func() {
+		// panic recover in goroutines is omitted for readability
 		for {
 			conn, err := listen.Accept()
 			if err != nil {
